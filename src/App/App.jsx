@@ -1,7 +1,23 @@
-
+import './App.scss'
+import React from 'react'
+import {useState} from "react"
+import {
+  BrowserRouter as Router,
+  NavLink,
+  Route,
+  Routes,
+} from "react-router-dom"
+import {Main} from "../Pages"
 function App() {
   return(
-    <h1>Hello world</h1>
+    <Router>
+      <main>
+        <Routes>
+           <Route path="/" element={<Main />}/>;
+        </Routes>
+      </main>
+      <footer></footer>
+    </Router>
   )
     
   
