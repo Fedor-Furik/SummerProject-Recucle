@@ -7,13 +7,13 @@ import {
   Route,
   Routes,
 } from "react-router-dom"
-import {Main} from "../Pages"
+import {Home} from "../Pages"
 function App() {
   return(
     <Router>
       <main>
         <Routes>
-           <Route path="/" element={<Main />}/>;
+           <Route path="/" element={<Home />}/>;
         </Routes>
       </main>
       <footer></footer>

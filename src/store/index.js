@@ -1,2 +1,2 @@
-import Main from "../Pages/Main"
-export {Main}
+import Home from "../Pages/Home"
+export {Home}
