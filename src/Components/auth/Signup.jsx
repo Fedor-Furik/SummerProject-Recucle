@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useNavigate, NavLink } from 'react-router-dom';
 import { auth } from "../../../firebase"
+
+import "./Auth.scss"
 
 export default function Signup() {
     const [email, setEmail] = useState("")
@@ -28,8 +31,7 @@ export default function Signup() {
     }
     return (
         <div>
-            <form onSubmit={register}>
-                <h2>Create account</h2>
+            <form className='AuthSiUp' onSubmit={register}>
                 {error ? <p>{error}</p> : ""}
                 <input
                     placeholder='email'
@@ -49,12 +51,10 @@ export default function Signup() {
                     onChange={(e)=>setCopyPassword(e.target.value)} 
                     type="password" 
                 />
-                <button>Create</button>
-                <div className="Forgot"><NavLink className="For" to="/ForgotePassword"><h4>Забыли пороль?</h4></NavLink></div>
-
-                <button className='loginBut' onClick={login}><NavLink className="Nav">Войти в учетную запись</NavLink></button>
-                <div className="choice"><div className="line"></div><h3>Или</h3><div className="line"></div></div>
-                <button className='regBut'><NavLink className="Nav" to="/SignUp">Регистрация</NavLink></button>
+                <button className='loginBut'><NavLink className="Nav" onClick={register}>Регестрация</NavLink></button>
+                <div className="choice"><div className="line"></div><h3>Или войти с помощью</h3><div className="line"></div></div>
+                {/* <div className="AuthApps"><img src={img1} alt="ImgError" /><img src={img2} alt="ImgError" /><img src={img3} alt="ImgError" /></div> */}
+                <button className='regBut'><NavLink className="Nav">Продолжить без авторизации</NavLink></button>
                 
             </form>
         </div>
