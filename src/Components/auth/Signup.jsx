@@ -30,6 +30,7 @@ export default function Signup() {
         <div>
             <form onSubmit={register}>
                 <h2>Create account</h2>
+                {error ? <p>{error}</p> : ""}
                 <input
                     placeholder='email'
                     value={email} 
@@ -49,7 +50,12 @@ export default function Signup() {
                     type="password" 
                 />
                 <button>Create</button>
-                {error ? <p>{error}</p> : ""}
+                <div className="Forgot"><NavLink className="For" to="/ForgotePassword"><h4>Забыли пороль?</h4></NavLink></div>
+
+                <button className='loginBut' onClick={login}><NavLink className="Nav">Войти в учетную запись</NavLink></button>
+                <div className="choice"><div className="line"></div><h3>Или</h3><div className="line"></div></div>
+                <button className='regBut'><NavLink className="Nav" to="/SignUp">Регистрация</NavLink></button>
+                
             </form>
         </div>
     )

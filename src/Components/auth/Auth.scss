@@ -8,6 +8,11 @@
     font-family: InterT;
     src: url("../../fonts/Inter/Inter-Thin.ttf");
 }
+@font-face {
+    font-weight: 500;
+    font-family: InterR;
+    src: url("../../fonts/Inter/Inter-Regular.ttf");
+}
 .AuthSiIn{
     .loginBut{
         width: 327px;
@@ -15,19 +20,39 @@
         background-color: rgba(16, 143, 44, 1);
         border: none;
         border-radius: 10px;
-        color: rgba(255, 255, 255, 1);
+        margin-left: 16px;
+        margin-top: 60px;
+        display: flex;
+    }
+    .loginBut{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 327px;
+        height: 60px;
+        background-color: rgba(16, 143, 44, 1);
+        border: none;
+        margin-top: 60px;
+        border-radius: 10px;
         font-family: InterM;
         line-height: 28px;
         font-size: 18px;
         margin-left: 16px;
         cursor: pointer;
+        .Nav{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+        }
     }
     .regBut{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 327px;
         height: 60px;
         background-color: rgba(255, 255, 255, 0);
         border: 2px solid rgba(16, 143, 44, 1);
-        margin-top: 25px;
+        margin-top: 20px;
         border-radius: 10px;
         font-family: InterM;
         line-height: 28px;
@@ -39,19 +64,51 @@
             color: rgba(18, 18, 18, 1);
         }
     }
+    .error{
+        font-family: InterR;
+        margin-left: 20px;
+        color: red;
+    }
     .Forgot{
+        margin-left: 18px;
         height: 18px;
         width: 327px;
-        color: rgba(128, 128, 128, 1);
-        font-family: InterT;
+        display: flex;
+        justify-content: flex-end;
+        .For{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        h4{
+            width: 113px;
+            height: 17px;
+            color: rgba(128, 128, 128, 1);
+            font-family: InterT;
+            line-height: 16.94px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+    .firstI{
+        margin-top: 0px;
     }
     input{
+        padding-left: 35px;
+        cursor: pointer;
         height: 60px;
-        width: 318px;
+        width: 290px;
         margin-left: 16px;
         margin-top: 15px;
         border: 2px solid rgba(209, 209, 209, 1);
         border-radius: 10px;
+        background-repeat: no-repeat;
+        background-position: left 11px center;
+    }
+    #i1{
+        background-image: url(../../assets/Vector.png);
+    }
+    #i2{
+        background-image: url(../../assets/Vector2.png);
     }
     .line{
         height: 2px;
@@ -61,7 +118,7 @@
     .choice{
         height: 18px;
         width: 327px;
-        margin-top:25px;
+        margin-top:20px;
         margin-left: 16px;
         display: flex;
         align-items: center;
