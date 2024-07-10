@@ -9,7 +9,7 @@ import {
   Routes,
 } from "react-router-dom"
 
-import {Home,SignIn, SignUp,SignOut,ForgotePassword,   NotSuccessReg,SuccessLogin} from "../Pages"
+import {Home,MainPage, SignIn, SignUp, SignOut, ForgotePassword,   SuccessReg,SuccessLogin} from "../Pages"
 import {FirstPage, SecondPage, ThirdPage} from "../Pages/preview"
 
 function App() {
@@ -19,14 +19,15 @@ function App() {
       <main className="app">
       <Routes>
            <Route path="/" element={<Home />}/>;
+           <Route path="/MainPage" element={<MainPage />}/>;
 
            <Route path="/SignIn" element={<SignIn />}/>;
            <Route path="/SignUp" element={<SignUp />}/>
            <Route path="/SignOut" element={<SignOut />}/>;
            <Route path="/ForgotePassword" element={<ForgotePassword />}/>;
 
+           <Route path="/SuccessReg" element={<SuccessReg />}/>;
            <Route path="/SuccessLogin" element={<SuccessLogin />}/>;
-           <Route path="/NotSuccessReg" element={<NotSuccessReg />}/>;
 
            <Route path="/FirstPage" element={<FirstPage />}/>;
            <Route path="/SecondPage" element={<SecondPage />}/>;

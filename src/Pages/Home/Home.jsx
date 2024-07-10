@@ -8,7 +8,7 @@ export default function Home() {
 
   window.onload = function() {
     const secondTimer = setTimeout(() => {
-      navigate("/SignIn");
+      navigate("/FirstPage");
     }, 5000);
 
     return () => {
@@ -17,7 +17,7 @@ export default function Home() {
 }
 
   return (
-    <div className="container">
+    <div className="container1">
        <div className="logo"><img src={Logo} alt="ImageError" /><h3>зеленый ресурс</h3></div>
     </div>
   );

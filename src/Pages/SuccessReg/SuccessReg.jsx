@@ -1,12 +1,12 @@
 import React from 'react'
-import { Signup } from '../../Components/auth/Signup'
-import "./SingUp.scss"
 import Logo from "../assets/Logo.png";
+import suc from "../assets/suc.png"
 import { NavLink } from "react-router-dom";
+import "./SuccessReg.scss"
 
-export default function SingUp() {
+export default function SuccessReg() {
   return (
-    <div className="SignContainer1">
+    <div className='SucContainer2'>
       <header>
         <div className="logo2">
           <img src={Logo} alt="ImageError" />
@@ -15,12 +15,14 @@ export default function SingUp() {
           </div>
         </div>
         <div className="title">
-          <h1>Регистрация</h1>
+          <h1>Поздравляем!</h1>
+          <h2>Регестрация прошла успешно</h2>
         </div>
       </header>
       <main>
-        <Signup/>
+        <div className="ToF"><img src={suc} alt="" /></div>
+        <button><NavLink to="/MainPage" className="Nav">Продолжить</NavLink></button>
       </main>
     </div>
-  );
+  )
 }

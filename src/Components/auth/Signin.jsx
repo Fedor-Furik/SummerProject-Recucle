@@ -36,7 +36,8 @@ export default function Signin() {
                     className='firstI'
                     value={email} 
                     onChange={(e)=>setEmail(e.target.value)} 
-                    type="email" 
+                    type="email"
+                    autoFocus
                 />
                 <input 
                     id="i2"

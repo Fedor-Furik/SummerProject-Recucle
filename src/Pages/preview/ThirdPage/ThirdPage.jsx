@@ -4,7 +4,7 @@ import logo from "../../assets/Logo.png"
 
 export default function ThirdPage() {
   return (
-    <div className="container5">
+    <div className="PrevContainer3">
       <header>
         <div className="logo">
           <img src={logo} alt="ImgError" />

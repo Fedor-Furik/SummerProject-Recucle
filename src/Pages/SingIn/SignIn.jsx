@@ -6,7 +6,7 @@ import {Signin} from "../../Components/auth/Signin"
 
 export default function SignIn() {
   return (
-    <div className="container2">
+    <div className="SignContainer2">
       <header>
         <div className="logo2">
           <img src={Logo} alt="ImageError" />
