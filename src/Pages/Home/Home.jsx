@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import Logo from "../assets/Logo.png"
@@ -6,7 +7,7 @@ import "./Home.scss"
 export default function Home() {
   const navigate = useNavigate();
 
-  window.onload = function() {
+    useEffect(() => {
     const secondTimer = setTimeout(() => {
       navigate("/FirstPage");
     }, 5000);
@@ -14,7 +15,7 @@ export default function Home() {
     return () => {
       clearTimeout(secondTimer);
     };
-}
+  }, [])
 
   return (
     <div className="container1">

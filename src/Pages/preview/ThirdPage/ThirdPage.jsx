@@ -1,31 +1,37 @@
 import React from 'react'
-import logo from "../../assets/Logo.png"
-// import MainIm from "../assets/ThirdI"
+import Logo from "../../assets/Logo.png"
+import Img from "../../../assets/Third.png"
+import { NavLink } from 'react-router-dom'
+import "../Prew.scss"
 
 export default function ThirdPage() {
   return (
-    <div className="PrevContainer3">
+    <div className="PrevContainer">
       <header>
-        <div className="logo">
-          <img src={logo} alt="ImgError" />
-          <div className="UnFlex"><h3>зеленый ресурс</h3></div>
+        <div className="logo2">
+          <div className="Flex">
+            <img src={Logo} alt="ImageError" />
+            <h3>зеленый ресурс</h3>
+          </div> 
         </div>
-        <h4 className="SkipLink">Пропустить</h4>
+        <NavLink id="Hide" className="For" to="/SignIn"><h4>Пропустить</h4></NavLink>
       </header>
       <main>
-        {/* <img src={MainIm} alt="ImgError" /> */}
+        <img src={Img} alt="ImageError" />
+        <div className="title">
+          <h1>Сортировка</h1>
+          <h2>разделяет отходы по категориям</h2>
+        </div>
       </main>
       <footer>
-        <div className="title">
-            <h1></h1>
-            <h2></h2>
-        </div>
-        <div className="indicator">
-          <button className='ButFr'></button>
-          <button className='ButSec'></button>
-          <button className='ButThir'></button>
-        </div>
-        <button className='transition'></button>
+        <div className="PodBlock">
+        <div className="Inder">
+        <div></div>
+        <div></div>
+        <div  className="active"></div>
+      </div>
+      </div>
+        <button className='Next'><NavLink to="/SignIn" className="Nav">Далее</NavLink></button>
       </footer>
     </div>
   )
