@@ -16,6 +16,7 @@ export default function SingUp() {
         </div>
         <div className="title">
           <h1>Регистрация</h1>
+          <h2>Введите электронную почту</h2>
         </div>
       </header>
       <main>

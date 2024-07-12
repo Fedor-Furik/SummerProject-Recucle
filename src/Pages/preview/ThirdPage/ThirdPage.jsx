@@ -19,8 +19,8 @@ export default function ThirdPage() {
       <main>
         <img src={Img} alt="ImageError" />
         <div className="title">
-          <h1>Сортировка</h1>
-          <h2>разделяет отходы по категориям</h2>
+          <h1>Вторичный ресурс</h1>
+          <h2 className='big2'>способствует уменьшению потребления природных ресурсов</h2>
         </div>
       </main>
       <footer>

@@ -19,8 +19,8 @@ export default function SecondPage() {
       <main>
         <img src={Img} alt="ImageError" />
         <div className="title">
-          <h1>Сортировка</h1>
-          <h2>разделяет отходы по категориям</h2>
+          <h1>Переработка</h1>
+          <h2 className='big'>уменьшает загрязнение окружающей среды</h2>
         </div>
       </main>
       <footer>

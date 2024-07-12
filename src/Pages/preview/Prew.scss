@@ -59,7 +59,7 @@
             width: 334px;
             height: 25px;
             font-family: InterB;
-            font-size: 40px;
+            font-size: 30px;
             line-height: 38.73px;
             color: rgba(18, 18, 18, 1);
         }
@@ -70,6 +70,12 @@
             font-size: 20px;
             line-height: 21.78px;
             color: rgba(176, 176, 176, 1);
+        }
+        .big{
+            width: 300px;
+        }
+        .big2{
+            width: 350px;
         }
         }
         img{
@@ -129,5 +135,6 @@
     #Hide{
         visibility: hidden;
     }
+    
     
 }

@@ -39,13 +39,17 @@ export default function Signin() {
                     type="email"
                     autoFocus
                 />
-                <input 
-                    id="i2"
-                    placeholder='Введите пароль'
-                    value={password} 
-                    onChange={(e)=>setPassword(e.target.value)} 
-                    type="password" 
-                />
+                <div className="Password">
+                    <input 
+                        id="i2"
+                        placeholder='Введите пароль'
+                        value={password} 
+                        onChange={(e)=>setPassword(e.target.value)} 
+                        type="password" 
+                    />
+                    <button><img src="" alt="ImageError" /></button>
+                </div>
+                
 
                 <div className="Forgot"><NavLink className="For" to="/ForgotePassword"><h4>Забыли пороль?</h4></NavLink></div>
 

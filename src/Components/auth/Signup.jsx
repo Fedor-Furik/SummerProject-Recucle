@@ -25,7 +25,7 @@ export default function Signup() {
         }
         createUserWithEmailAndPassword(auth, email, password)
           .then((user) => {
-            console.log(user)
+            // console.log(user)
             setError("")
             setEmail("")
             setCopyPassword("")
@@ -49,9 +49,10 @@ export default function Signup() {
         e.preventDefault()
         console.log("Facebook")
     }
+    // onSubmit={register}
     return (
         <div>
-            <form className='AuthSiUp' onSubmit={register}>
+            <form className='AuthSiUp'>
                 {error ? <p>{error}</p> : ""}
                 <input
                     placeholder='email'
@@ -61,13 +62,13 @@ export default function Signup() {
                     autoFocus
                 />
                 <input 
-                    placeholder='password'
+                    placeholder='Пароль'
                     value={password} 
                     onChange={(e)=>setPassword(e.target.value)} 
                     type="password" 
                 />
                 <input
-                    placeholder='repeat of password'
+                    placeholder='Повтор пароля'
                     value={copyPassword} 
                     onChange={(e)=>setCopyPassword(e.target.value)} 
                     type="password" 
