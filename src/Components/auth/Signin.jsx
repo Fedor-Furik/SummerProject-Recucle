@@ -10,7 +10,10 @@ export default function Signin() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [error, setError] = useState("")
-
+    function Def(e){
+        e.preventDefault()
+        return
+    }
     function login(e){
         e.preventDefault()
         signInWithEmailAndPassword(auth, email, password)
@@ -28,7 +31,7 @@ export default function Signin() {
     }
     return (
         <div className='AuthSiIn'>
-            <form>
+            <form onSubmit={Def}>
                 {error ? <p className='error'>{error}</p> : ""}
                 <input
                     id="i1"
