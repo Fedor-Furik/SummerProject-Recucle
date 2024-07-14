@@ -9,11 +9,20 @@
     src: url("../../fonts/Inter/Inter-Thin.ttf");
 }
 @font-face {
+    font-size: 400;
+    font-family: InterL;
+    src: url("../../fonts/Inter/Inter-Light.ttf");
+}
+@font-face {
     font-weight: 500;
     font-family: InterR;
     src: url("../../fonts/Inter/Inter-Regular.ttf");
 }
 .AuthSiUp{
+    #error{
+        margin-top: 100px;
+        position: absolute;
+    }
     .loginBut{
         width: 327px;
         height: 60px;
@@ -68,6 +77,8 @@
         font-family: InterR;
         margin-left: 20px;
         color: red;
+        position: absolute;
+        margin-top: -10px;
     }
     .firstI{
         margin-top: 0px;
@@ -75,8 +86,8 @@
     input{
         padding-left: 13px;
         cursor: pointer;
-        height: 60px;
-        width: 290px;
+        height: 20px;
+        width: 310px;
         margin-left: 16px;
         margin-top: 15px;
         border: 2px solid rgba(209, 209, 209, 1);
@@ -85,7 +96,7 @@
         background-position: left 11px center;
     }
     #i1{
-        background-image: url(../../assets/Vector.png);
+        margin-top: 40px;
     }
     #i2{
         background-image: url(../../assets/Vector2.png);
@@ -124,6 +135,49 @@
             width: 140px;
             img{
                 cursor: pointer;
+            }
+        }
+    }
+    .Prav{
+        display: flex;
+        align-items: center;
+        margin-left: 16px;
+        button{
+            margin-top: 10px;
+            height: 18px;
+            width: 18px;
+            border-radius: 0px;
+            cursor: pointer;
+        }
+        .empty{
+            border: rgba(154, 154, 154, 1) solid 2px;
+        }
+        .full{
+            background-image: url(../../assets/Znak.png);
+            border: none;
+        }
+        .FlexDiv{
+            margin-left: 10px;
+            align-items: center;
+            p{
+                font-family: InterL;
+                font-size: 11px;
+                line-height: 12.1px;
+                width: 300px;
+                height: 1px;
+            }
+            .Link{
+                font-family: InterR;
+                font-size: 13px;
+                line-height: 12.1px;
+                width: 300px;
+                height: 7px;
+                margin-top: 0px;
+                color: rgba(16, 143, 44, 1);
+                text-decoration: none;
+            }
+            .Link:focus, .Link:hover{
+                text-decoration: underline;
             }
         }
     }

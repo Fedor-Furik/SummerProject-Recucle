@@ -105,13 +105,35 @@
         border: 2px solid rgba(209, 209, 209, 1);
         border-radius: 10px;
         background-repeat: no-repeat;
-        background-position: left 11px center;
+        background-position: left 10px top 20px;
+    }
+    .Password{
+        display: flex;
+        .NoView{
+            position: absolute;
+            right: 0;
+            margin-right: 35px;
+            margin-top: 34px;
+            cursor: pointer;
+            width: 28px;
+            height: 26px;
+        }
+        .View{
+            position: absolute;
+            right: 0;
+            margin-right: 35px;
+            margin-top: 36px;
+            cursor: pointer;
+            width: 29px;
+            height: 21.6px;
+        }
     }
     #i1{
         background-image: url(../../assets/Vector.png);
     }
     #i2{
         background-image: url(../../assets/Vector2.png);
+        background-position: left 10px top 19px;
     }
     .line{
         height: 2px;

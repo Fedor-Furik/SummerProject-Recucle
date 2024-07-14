@@ -21,6 +21,9 @@ export default function Signup() {
 
     const navigate = useNavigate();
 
+    const[terms,setTerms] = useState(false)
+    const[name, setName] = useState("empty")
+
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [copyPassword, setCopyPassword] = useState("")
@@ -29,8 +32,15 @@ export default function Signup() {
     function register(e){
         e.preventDefault()
         if(copyPassword !== password) {
-            setError("passwords didn't match")
+            setError("Пароли не совпадают")
             return
+        }
+        if(terms == false){
+            setError("Вы не приняли Политику конфиденциальности")
+            console.log(terms)
+            return
+        } else {
+            setError("")
         }
         createUserWithEmailAndPassword(auth, email, password)
           .then((user) => {
@@ -94,11 +104,28 @@ export default function Signup() {
   });
 
     }
+    function Reset(e){
+        e.preventDefault()
+        return
+    }
+    function AcceptTerms (e) {
+        e.preventDefault()
+        setTerms(!terms)
+        if(terms == true){
+            setName("empty")
+            // setTerms(false)
+        }
+        else{
+            setName("full")
+            // setTerms(true)
+        }
+    }
     return (
-        <div>
-            <form className='AuthSiUp'>
-                {error ? <p>{error}</p> : ""}
+        <div className='Reg'>
+            <form className='AuthSiUp' onSubmit={Reset}>
+                {error ? <p className='error'>{error}</p> : ""}
                 <input
+                    id="i1"
                     placeholder='email'
                     value={email} 
                     onChange={(e)=>setEmail(e.target.value)} 
@@ -122,6 +149,13 @@ export default function Signup() {
                 <div className="divAuthApps"><div className="ToFlex"><img src={Img1} alt="ImageError" onClick={GoogleAuth}/><img src={Img2} alt="ImageError" onClick={AppleAuth}/><img src={Img3} alt="ImageError" onClick={FacebookAuth}/></div></div>
                 {/* <div className="AuthApps"><img src={img1} alt="ImgError" /><img src={img2} alt="ImgError" /><img src={img3} alt="ImgError" /></div> */}
                 <button className='regBut'><NavLink className="Nav" to="/SignIn">Вернуться к авторизации</NavLink></button>
+                <div className="Prav">
+                    <button onClick={AcceptTerms} className={name}></button>
+                    <div className="FlexDiv">
+                        <p>Авторизируясь в приложении, Вы соглашаетесь с</p>
+                        <NavLink className="Link">Политикой конфиденциальности</NavLink>
+                    </div>
+                </div>
                 
             </form>
         </div>

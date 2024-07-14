@@ -4,12 +4,20 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase"
 import './Auth.scss'
 
+import View from "../../assets/View.png"
+import NoView from "../../assets/VectorLike.png"
+
 export default function Signin() {
     const navigate = useNavigate();
+
+    const [classN, setClassN] = useState("NoView")
+    const [img, setImg] = useState(NoView)
+    const [typeInp, setType] = useState("password")
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [error, setError] = useState("")
+    
     function Def(e){
         e.preventDefault()
         return
@@ -29,10 +37,23 @@ export default function Signin() {
             setError("Неправильный email или пароль")
           })
     }
+    function Eye(e){
+        e.preventDefault()
+        if(img == NoView){
+            setImg(View)
+            setClassN("View")
+            setType("text")
+        }
+        else{
+            setImg(NoView)
+            setClassN("NoView")
+            setType("password")
+        }
+    }
     return (
         <div className='AuthSiIn'>
             <form onSubmit={Def}>
-                {error ? <p className='error'>{error}</p> : ""}
+                {error ? <p id='error' className='error'>{error}</p> : ""}
                 <input
                     id="i1"
                     placeholder='Введите email'
@@ -48,9 +69,10 @@ export default function Signin() {
                         placeholder='Введите пароль'
                         value={password} 
                         onChange={(e)=>setPassword(e.target.value)} 
-                        type="password" 
+                        type={typeInp}
+                        maxLength="30"
                     />
-                    <button><img src="" alt="ImageError" /></button>
+                    <img className={classN} src={img} alt="ImageError" onClick={Eye}/>
                 </div>
                 
 
