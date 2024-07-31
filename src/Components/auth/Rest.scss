@@ -3,7 +3,9 @@
     .error{
         font-family: InterR;
         margin-left: 20px;
+        position: absolute;
         color: red;
+        line-height: 2px;
     }
     input{
         padding-left: 35px;
@@ -11,7 +13,7 @@
         height: 60px;
         width: 290px;
         margin-left: 16px;
-        margin-top: 15px;
+        margin-top: 33px;
         border: 2px solid rgba(209, 209, 209, 1);
         border-radius: 10px;
         background-repeat: no-repeat;
@@ -34,6 +36,9 @@
         cursor: pointer;
         text-decoration: none;
         color: rgba(255, 255, 255, 1);
+    }
+    .Tup{
+        margin-top: 100px;
     }
     .choice{
         height: 18px;

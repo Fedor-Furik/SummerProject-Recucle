@@ -113,13 +113,14 @@ export default function Signup() {
         setTerms(!terms)
         if(terms == true){
             setName("empty")
-            // setTerms(false)
+            setTerms(false)
         }
         else{
             setName("full")
-            // setTerms(true)
+            setTerms(true)
         }
     }
+    console.log(terms)
     return (
         <div className='Reg'>
             <form className='AuthSiUp' onSubmit={Reset}>

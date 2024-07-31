@@ -76,7 +76,7 @@ export default function Signin() {
                 </div>
                 
 
-                <div className="Forgot"><NavLink className="For" to="/ForgotePassword"><h4>Забыли пороль?</h4></NavLink></div>
+                <div className="Forgot"><NavLink className="For" to="/ForgotePassword"><h4>Забыли пароль?</h4></NavLink></div>
 
                 <button className='loginBut' onClick={login}><NavLink className="Nav">Войти в учетную запись</NavLink></button>
                 <div className="choice"><div className="line"></div><h3>Или</h3><div className="line"></div></div>

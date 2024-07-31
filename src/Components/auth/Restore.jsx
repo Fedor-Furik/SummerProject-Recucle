@@ -30,7 +30,7 @@ export default function Restore() {
             type="email"
             autoFocus
             />
-            <button>Отправить письмо для сброса пороля</button>
+            <button className='Tup'>Отправить письмо для сброса пороля</button>
             <div className="choice"><div className="line"></div><h3>Или</h3><div className="line"></div></div>
         </form>
         <button className='regBut'><NavLink className="Nav" to="/SignIn">Вернуться к авторизации</NavLink></button>
