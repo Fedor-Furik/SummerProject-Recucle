@@ -9,7 +9,7 @@ import {
   Routes,
 } from "react-router-dom"
 
-import {Home,MainPage, SignIn, SignUp, SignOut, ForgotePassword,   SuccessReg,SuccessLogin} from "../Pages"
+import {Home,MainPage, SignIn, SignUp, SignOut, ForgotePassword, Passwordsss,   SuccessReg,SuccessLogin} from "../Pages"
 import {FirstPage, SecondPage, ThirdPage} from "../Pages/preview"
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
            <Route path="/SignUp" element={<SignUp />}/>
            <Route path="/SignOut" element={<SignOut />}/>;
            <Route path="/ForgotePassword" element={<ForgotePassword />}/>;
+           <Route path="/Passwordsss" element={<Passwordsss/>}/>
 
            <Route path="/SuccessReg" element={<SuccessReg />}/>;
            <Route path="/SuccessLogin" element={<SuccessLogin />}/>;

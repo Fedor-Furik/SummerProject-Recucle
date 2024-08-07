@@ -25,8 +25,6 @@ export default function Signup() {
     const[name, setName] = useState("empty")
 
     const [email, setEmail] = useState("")
-    // const [password, setPassword] = useState("")
-    // const [copyPassword, setCopyPassword] = useState("")
     const [error, setError] = useState("")
 
     function register(e){
@@ -37,36 +35,10 @@ export default function Signup() {
             return
         } else {
             setError("")
+            sessionStorage.setItem("email", email)
+            navigate("/Passwordsss")
         }
-        console.log("hi")
     }
-    // function register(e){
-    //     e.preventDefault()
-    //     if(copyPassword !== password) {
-    //         setError("Пароли не совпадают")
-    //         return
-    //     }
-    //     if(terms == false){
-    //         setError("Вы не приняли Политику конфиденциальности")
-    //         console.log(terms)
-    //         return
-    //     } else {
-    //         setError("")
-    //     }
-    //     createUserWithEmailAndPassword(auth, email, password)
-    //       .then((user) => {
-    //         // console.log(user)
-    //         setError("")
-    //         setEmail("")
-    //         setCopyPassword("")
-    //         setPassword("")
-    //         navigate("/SuccessReg")
-            
-    //       })
-    //       .catch((error) => {
-    //         console.log(error)
-    //       })
-    // }
     function GoogleAuth(e){
         e.preventDefault();
         signInWithPopup(auth, provider)
@@ -131,7 +103,6 @@ export default function Signup() {
             setTerms(true)
         }
     }
-    console.log(terms)
     return (
         <div className='Reg'>
             <form className='AuthSiUp' onSubmit={Reset}>
@@ -144,18 +115,6 @@ export default function Signup() {
                     type="email" 
                     autoFocus
                 />
-                {/* <input 
-                    placeholder='Пароль'
-                    value={password} 
-                    onChange={(e)=>setPassword(e.target.value)} 
-                    type="password" 
-                />
-                <input
-                    placeholder='Повтор пароля'
-                    value={copyPassword} 
-                    onChange={(e)=>setCopyPassword(e.target.value)} 
-                    type="password" 
-                /> */}
                 <button className='loginBut'><NavLink className="Nav" onClick={register}>Регистрация</NavLink></button>
                 <div className="choice"><div className="line"></div><h3>Или войти с помощью</h3><div className="line"></div></div>
                 <div className="divAuthApps"><div className="ToFlex"><img src={Img1} alt="ImageError" onClick={GoogleAuth}/><img src={Img2} alt="ImageError" onClick={AppleAuth}/><img src={Img3} alt="ImageError" onClick={FacebookAuth}/></div></div>
