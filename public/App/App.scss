@@ -1,0 +1,11 @@
+.app{
+        .page{
+               position: absolute; 
+        }
+        .page-enter-active {
+                animation: normal 1s forwards;
+        }
+        .page-exit-active {
+                animation: normal 1s forwards;
+        }
+}
