@@ -1,0 +1,11 @@
+.app .page {
+  position: absolute;
+}
+.app .page-enter-active {
+  -webkit-animation: normal 1s forwards;
+          animation: normal 1s forwards;
+}
+.app .page-exit-active {
+  -webkit-animation: normal 1s forwards;
+          animation: normal 1s forwards;
+}/*# sourceMappingURL=App.css.map */

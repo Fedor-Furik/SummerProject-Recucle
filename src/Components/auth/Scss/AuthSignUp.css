@@ -1,0 +1,145 @@
+@font-face {
+  font-weight: 600;
+  font-family: InterM;
+  src: url("../../fonts/Inter/Inter-Medium.ttf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: InterT;
+  src: url("../../fonts/Inter/Inter-Thin.ttf");
+}
+@font-face {
+  font-size: 400;
+  font-family: InterL;
+  src: url("../../fonts/Inter/Inter-Light.ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: InterR;
+  src: url("../../fonts/Inter/Inter-Regular.ttf");
+}
+.AuthSignUp form .error {
+  font-family: InterR;
+  margin-left: 20px;
+  color: red;
+  position: absolute;
+  margin-top: -10px;
+}
+.AuthSignUp form #in1 {
+  padding-left: 50px;
+  margin-left: 16px;
+  margin-top: 40px;
+  cursor: pointer;
+  color: rgb(154, 154, 154);
+  font-size: 14px;
+  height: 60px;
+  width: 270px;
+  border: 2px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  background-image: url(../../assets/file2.png);
+  background-repeat: no-repeat;
+  background-position: left 11px center;
+  background-size: 30px;
+}
+.AuthSignUp form #in1:focus {
+  color: black;
+}
+.AuthSignUp form #in2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 60px;
+  background-color: rgb(16, 143, 44);
+  border: none;
+  margin-top: 60px;
+  border-radius: 10px;
+  font-family: InterM;
+  line-height: 28px;
+  font-size: 18px;
+  margin-left: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.AuthSignUp .AppsAuth .choice {
+  height: 18px;
+  width: 327px;
+  margin-top: 20px;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AuthSignUp .AppsAuth .choice .line {
+  height: 2px;
+  width: 75px;
+  background-color: rgb(218, 218, 218);
+}
+.AuthSignUp .AppsAuth .choice h3 {
+  width: 157px;
+  height: 17px;
+  font-family: InterT;
+  font-size: 14px;
+  line-height: 16.94px;
+  color: rgb(128, 128, 128);
+}
+.AuthSignUp .AppsAuth .divAuthApps {
+  margin-top: 15px;
+  width: 310px;
+  margin-left: 16px;
+  display: flex;
+  justify-content: center;
+}
+.AuthSignUp .AppsAuth .divAuthApps .ToFlex {
+  display: flex;
+  justify-content: space-around;
+  width: 140px;
+}
+.AuthSignUp .AppsAuth .divAuthApps .ToFlex img {
+  cursor: pointer;
+}
+.AuthSignUp .AppsAuth .Prav {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  margin-top: 20px;
+}
+.AuthSignUp .AppsAuth .Prav button {
+  margin-top: 10px;
+  height: 18px;
+  width: 18px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.AuthSignUp .AppsAuth .Prav .empty {
+  border: rgb(154, 154, 154) solid 2px;
+}
+.AuthSignUp .AppsAuth .Prav .full {
+  background-image: url(../../assets/Znak.png);
+  border: none;
+}
+.AuthSignUp .AppsAuth .Prav .FlexDiv {
+  margin-left: 10px;
+  align-items: center;
+}
+.AuthSignUp .AppsAuth .Prav .FlexDiv p {
+  font-family: InterL;
+  font-size: 11px;
+  line-height: 12.1px;
+  width: 300px;
+  height: 1px;
+}
+.AuthSignUp .AppsAuth .Prav .FlexDiv .Link {
+  font-family: InterR;
+  font-size: 13px;
+  line-height: 12.1px;
+  width: 300px;
+  height: 7px;
+  margin-top: 0px;
+  color: rgb(16, 143, 44);
+  text-decoration: none;
+}
+.AuthSignUp .AppsAuth .Prav .FlexDiv .Link:focus, .AuthSignUp .AppsAuth .Prav .FlexDiv .Link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=AuthSignUp.css.map */

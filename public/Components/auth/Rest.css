@@ -1,0 +1,81 @@
+.restor form .error {
+  font-family: InterR;
+  margin-left: 20px;
+  position: absolute;
+  color: red;
+  line-height: 2px;
+}
+.restor form input {
+  padding-left: 35px;
+  cursor: pointer;
+  height: 60px;
+  width: 290px;
+  margin-left: 16px;
+  margin-top: 33px;
+  border: 2px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: left 11px center;
+}
+.restor form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 60px;
+  background-color: rgb(16, 143, 44);
+  border: none;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-family: InterM;
+  line-height: 28px;
+  font-size: 16px;
+  margin-left: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.restor form .Tup {
+  margin-top: 100px;
+}
+.restor form .choice {
+  height: 18px;
+  width: 327px;
+  margin-top: 20px;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restor form .choice .line {
+  height: 2px;
+  width: 130px;
+  background-color: rgb(218, 218, 218);
+}
+.restor form .choice h3 {
+  height: 17px;
+  font-family: InterT;
+  font-size: 14px;
+  line-height: 16.94px;
+  color: rgb(128, 128, 128);
+}
+.restor .regBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgb(16, 143, 44);
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: InterM;
+  line-height: 28px;
+  font-size: 18px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.restor .regBut .Nav {
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+}/*# sourceMappingURL=Rest.css.map */

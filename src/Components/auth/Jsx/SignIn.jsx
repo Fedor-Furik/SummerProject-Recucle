@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { useNavigate, NavLink } from 'react-router-dom';
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../../firebase"
-import './Auth.scss'
+import { auth } from "../../../../firebase"
+import '../Scss/AuthSignIn.scss'
 
-import View from "../../assets/View.png"
-import NoView from "../../assets/VectorLike.png"
+import View from "../../../assets/View.png"
+import NoView from "../../../assets/VectorLike.png"
 
 export default function Signin() {
     const navigate = useNavigate();
@@ -27,13 +27,11 @@ export default function Signin() {
         signInWithEmailAndPassword(auth, email, password)
           .then((user) => {
             navigate("/SuccessLogin")
-            // console.log(user)
             setError("")
             setEmail("")
             setPassword("")
           })
           .catch((error) => {
-            // console.log(error)
             setError("Неправильный email или пароль")
           })
     }
@@ -51,7 +49,7 @@ export default function Signin() {
         }
     }
     return (
-        <div className='AuthSiIn'>
+        <div className='AuthSignIn'>
             <form onSubmit={Def}>
                 {error ? <p id='error' className='error'>{error}</p> : ""}
                 <input

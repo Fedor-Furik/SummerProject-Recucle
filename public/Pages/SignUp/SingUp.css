@@ -1,0 +1,60 @@
+@font-face {
+  font-weight: 700;
+  font-family: InterB;
+  src: url("../../fonts/Inter/Inter-Bold.ttf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: InterT;
+  src: url("../../fonts/Inter/Inter-Thin.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: ZillaSlab;
+  src: url("../../fonts/Inter/Inter-Bold.ttf");
+}
+.SignContainer1 {
+  width: 100%;
+  height: 812px;
+  overflow: hidden;
+}
+.SignContainer1 header {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.SignContainer1 header h1 {
+  width: 334px;
+  height: 40x;
+  font-family: InterB;
+  font-size: 32px;
+  line-height: 38.73px;
+  color: rgb(18, 18, 18);
+}
+.SignContainer1 header h2 {
+  width: 280px;
+  height: 44px;
+  font-family: InterT;
+  font-size: 18px;
+  line-height: 1.78px;
+  color: rgb(176, 176, 176);
+}
+.SignContainer1 header .logo2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 146.26px;
+  height: 54.74px;
+}
+.SignContainer1 header .logo2 h3 {
+  width: 87px;
+  height: 30px;
+  font-family: ZillaSlab;
+  font-size: 18.75px;
+  line-height: 15px;
+  color: rgb(18, 18, 18);
+}
+.SignContainer1 header .logo2 img {
+  width: 54.74px;
+  height: 54.74px;
+  border-radius: 14.74px;
+}/*# sourceMappingURL=SingUp.css.map */

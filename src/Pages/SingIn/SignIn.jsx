@@ -1,7 +1,7 @@
 import Logo from "../assets/Logo.png";
 import "./SignIn.scss";
 import { NavLink } from "react-router-dom";
-import {Signin} from "../../Components/auth/Signin"
+import {Signin} from "../../Components/auth/Jsx/SignIn"
 
 
 export default function SignIn() {

@@ -1,0 +1,160 @@
+@font-face {
+  font-weight: 600;
+  font-family: InterM;
+  src: url("../../fonts/Inter/Inter-Medium.ttf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: InterT;
+  src: url("../../fonts/Inter/Inter-Thin.ttf");
+}
+@font-face {
+  font-size: 400;
+  font-family: InterL;
+  src: url("../../fonts/Inter/Inter-Light.ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: InterR;
+  src: url("../../fonts/Inter/Inter-Regular.ttf");
+}
+.AuthSignIn .loginBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 60px;
+  background-color: rgb(16, 143, 44);
+  border: none;
+  border-radius: 10px;
+  font-family: InterM;
+  line-height: 28px;
+  font-size: 18px;
+  margin-left: 16px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+.AuthSignIn .loginBut .Nav {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.AuthSignIn .regBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgb(16, 143, 44);
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: InterM;
+  line-height: 28px;
+  font-size: 18px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.AuthSignIn .regBut .Nav {
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+}
+.AuthSignIn .error {
+  font-family: InterR;
+  margin-left: 20px;
+  color: red;
+  position: absolute;
+  margin-top: -10px;
+}
+.AuthSignIn .Forgot {
+  margin-left: 18px;
+  height: 18px;
+  width: 327px;
+  display: flex;
+  justify-content: flex-end;
+}
+.AuthSignIn .Forgot .For {
+  text-decoration: none;
+  cursor: pointer;
+}
+.AuthSignIn .Forgot h4 {
+  width: 113px;
+  height: 17px;
+  color: rgb(128, 128, 128);
+  font-family: InterT;
+  line-height: 16.94px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.AuthSignIn .Forgot h4:focus, .AuthSignIn .Forgot h4:hover {
+  text-decoration: underline;
+}
+.AuthSignIn .firstI {
+  margin-top: 20px;
+}
+.AuthSignIn input {
+  color: rgb(154, 154, 154);
+  padding-left: 35px;
+  cursor: pointer;
+  height: 60px;
+  width: 290px;
+  margin-left: 16px;
+  margin-top: 15px;
+  border: 2px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: left 11px center;
+  font-size: 14px;
+}
+.AuthSignIn input:focus {
+  color: black;
+}
+.AuthSignIn .Password {
+  display: flex;
+}
+.AuthSignIn .Password .NoView {
+  position: absolute;
+  right: 0;
+  margin-right: 35px;
+  margin-top: 34px;
+  cursor: pointer;
+  width: 28px;
+  height: 26px;
+}
+.AuthSignIn .Password .View {
+  position: absolute;
+  right: 0;
+  margin-right: 35px;
+  margin-top: 36px;
+  cursor: pointer;
+  width: 29px;
+  height: 21.6px;
+}
+.AuthSignIn #i1 {
+  background-image: url(../../assets/Vector.png);
+}
+.AuthSignIn #i2 {
+  background-image: url(../../assets/Vector2.png);
+}
+.AuthSignIn .choice {
+  height: 18px;
+  width: 327px;
+  margin-top: 20px;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AuthSignIn .choice .line {
+  height: 2px;
+  width: 138px;
+  background-color: rgb(218, 218, 218);
+}
+.AuthSignIn .choice h3 {
+  width: 28px;
+  height: 17px;
+  font-family: InterT;
+  font-size: 14px;
+  line-height: 16.94px;
+  color: rgb(128, 128, 128);
+}/*# sourceMappingURL=AuthSignIn.css.map */

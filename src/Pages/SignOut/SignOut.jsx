@@ -1,10 +1,10 @@
 import React from 'react'
-import {AuthDetails} from "../../Components/auth/AuthDetails"
+import {AccountEx} from "../../Components/auth/Jsx/AccountEx"
 
 export default function SignOut() {
   return (
     <div>
-        <AuthDetails/>
+        <AccountEx/>
     </div>
   )
 }

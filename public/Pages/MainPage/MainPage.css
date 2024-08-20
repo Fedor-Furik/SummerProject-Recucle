@@ -1,0 +1,35 @@
+.container2 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.container2 .head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container2 .head img {
+  width: 40px;
+}
+.container2 .finder {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: centere;
+}
+.container2 .finder input {
+  border: 1px rgb(154, 154, 154) solid;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  align-items: center;
+  padding-left: 60px;
+  color: rgb(154, 154, 154);
+}
+.container2 .finder img {
+  width: 22px;
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 15px;
+}/*# sourceMappingURL=MainPage.css.map */

@@ -1,0 +1,184 @@
+@font-face {
+  font-weight: 600;
+  font-family: InterM;
+  src: url("../../fonts/Inter/Inter-Medium.ttf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: InterT;
+  src: url("../../fonts/Inter/Inter-Thin.ttf");
+}
+@font-face {
+  font-size: 400;
+  font-family: InterL;
+  src: url("../../fonts/Inter/Inter-Light.ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: InterR;
+  src: url("../../fonts/Inter/Inter-Regular.ttf");
+}
+.AuthSiUp #error {
+  margin-top: 100px;
+  position: absolute;
+}
+.AuthSiUp .loginBut {
+  width: 327px;
+  height: 60px;
+  background-color: rgb(16, 143, 44);
+  border: none;
+  border-radius: 10px;
+  margin-left: 16px;
+  margin-top: 60px;
+  display: flex;
+}
+.AuthSiUp .loginBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 60px;
+  background-color: rgb(16, 143, 44);
+  border: none;
+  margin-top: 60px;
+  border-radius: 10px;
+  font-family: InterM;
+  line-height: 28px;
+  font-size: 18px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.AuthSiUp .loginBut .Nav {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.AuthSiUp .regBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgb(16, 143, 44);
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: InterM;
+  line-height: 28px;
+  font-size: 18px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.AuthSiUp .regBut .Nav {
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+}
+.AuthSiUp .error {
+  font-family: InterR;
+  margin-left: 20px;
+  color: red;
+  position: absolute;
+  margin-top: -10px;
+}
+.AuthSiUp .firstI {
+  margin-top: 0px;
+}
+.AuthSiUp input {
+  padding-left: 13px;
+  cursor: pointer;
+  color: rgb(154, 154, 154);
+  height: 60px;
+  width: 310px;
+  margin-left: 16px;
+  margin-top: 15px;
+  border: 2px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: left 11px center;
+  font-size: 14px;
+}
+.AuthSiUp #i1 {
+  margin-top: 40px;
+}
+.AuthSiUp #i2 {
+  background-image: url(../../assets/Vector2.png);
+}
+.AuthSiUp .choice {
+  height: 18px;
+  width: 327px;
+  margin-top: 20px;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AuthSiUp .choice .line {
+  height: 2px;
+  width: 75px;
+  background-color: rgb(218, 218, 218);
+}
+.AuthSiUp .choice h3 {
+  width: 157px;
+  height: 17px;
+  font-family: InterT;
+  font-size: 14px;
+  line-height: 16.94px;
+  color: rgb(128, 128, 128);
+}
+.AuthSiUp .divAuthApps {
+  margin-top: 15px;
+  width: 310px;
+  margin-left: 16px;
+  display: flex;
+  justify-content: center;
+}
+.AuthSiUp .divAuthApps .ToFlex {
+  display: flex;
+  justify-content: space-around;
+  width: 140px;
+}
+.AuthSiUp .divAuthApps .ToFlex img {
+  cursor: pointer;
+}
+.AuthSiUp .Prav {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+.AuthSiUp .Prav button {
+  margin-top: 10px;
+  height: 18px;
+  width: 18px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.AuthSiUp .Prav .empty {
+  border: rgb(154, 154, 154) solid 2px;
+}
+.AuthSiUp .Prav .full {
+  background-image: url(../../assets/Znak.png);
+  border: none;
+}
+.AuthSiUp .Prav .FlexDiv {
+  margin-left: 10px;
+  align-items: center;
+}
+.AuthSiUp .Prav .FlexDiv p {
+  font-family: InterL;
+  font-size: 11px;
+  line-height: 12.1px;
+  width: 300px;
+  height: 1px;
+}
+.AuthSiUp .Prav .FlexDiv .Link {
+  font-family: InterR;
+  font-size: 13px;
+  line-height: 12.1px;
+  width: 300px;
+  height: 7px;
+  margin-top: 0px;
+  color: rgb(16, 143, 44);
+  text-decoration: none;
+}
+.AuthSiUp .Prav .FlexDiv .Link:focus, .AuthSiUp .Prav .FlexDiv .Link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=Auth2.css.map */

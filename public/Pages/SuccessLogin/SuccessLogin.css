@@ -1,0 +1,93 @@
+@font-face {
+  font-weight: 700;
+  font-family: InterB;
+  src: url("../../fonts/Inter/Inter-Bold.ttf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: InterT;
+  src: url("../../fonts/Inter/Inter-Thin.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: ZillaSlab;
+  src: url("../../fonts/Inter/Inter-Bold.ttf");
+}
+.SucContainer1 {
+  width: 100%;
+  height: 812px;
+  overflow: hidden;
+}
+.SucContainer1 main {
+  margin-top: 30px;
+}
+.SucContainer1 main .ToF {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SucContainer1 main .ToF img {
+  width: 60%;
+}
+.SucContainer1 main button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 60px;
+  background-color: rgb(16, 143, 44);
+  border: none;
+  margin-top: 60px;
+  border-radius: 10px;
+  font-family: InterM;
+  line-height: 28px;
+  font-size: 18px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.SucContainer1 main button .Nav {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.SucContainer1 header {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.SucContainer1 header h1 {
+  width: 340px;
+  height: 40px;
+  font-family: InterB;
+  font-size: 32px;
+  line-height: 38.73px;
+  color: rgb(18, 18, 18);
+}
+.SucContainer1 header h2 {
+  width: 220px;
+  height: 44px;
+  font-family: InterT;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: rgb(176, 176, 176);
+}
+.SucContainer1 header .logo2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 146.26px;
+  height: 54.74px;
+}
+.SucContainer1 header .logo2 h3 {
+  width: 87px;
+  height: 30px;
+  font-family: ZillaSlab;
+  font-size: 18.75px;
+  line-height: 15px;
+  color: rgb(18, 18, 18);
+}
+.SucContainer1 header .logo2 img {
+  width: 54.74px;
+  height: 54.74px;
+  border-radius: 14.74px;
+}/*# sourceMappingURL=SuccessLogin.css.map */

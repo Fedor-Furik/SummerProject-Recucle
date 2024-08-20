@@ -1,0 +1,86 @@
+@font-face {
+  font-weight: 600;
+  font-family: InterM;
+  src: url("../../fonts/Inter/Inter-Medium.ttf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: InterT;
+  src: url("../../fonts/Inter/Inter-Thin.ttf");
+}
+@font-face {
+  font-size: 400;
+  font-family: InterL;
+  src: url("../../fonts/Inter/Inter-Light.ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: InterR;
+  src: url("../../fonts/Inter/Inter-Regular.ttf");
+}
+.restore form .error {
+  font-family: InterR;
+  margin-left: 20px;
+  position: absolute;
+  color: red;
+  line-height: 2px;
+}
+.restore form input {
+  padding-left: 50px;
+  cursor: pointer;
+  height: 60px;
+  width: 270px;
+  margin-left: 16px;
+  margin-top: 33px;
+  color: rgb(154, 154, 154);
+  border: 2px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: left 11px center;
+  background-image: url("../../assets/file2.png");
+  background-size: 30px;
+}
+.restore form input:focus {
+  color: black;
+}
+.restore form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 60px;
+  background-color: rgb(16, 143, 44);
+  border: none;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-family: InterM;
+  line-height: 28px;
+  font-size: 16px;
+  margin-left: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.restore form .Tup {
+  margin-top: 100px;
+}
+.restore .regBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgb(16, 143, 44);
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: InterM;
+  line-height: 28px;
+  font-size: 18px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.restore .regBut .Nav {
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+}/*# sourceMappingURL=RestorePass.css.map */

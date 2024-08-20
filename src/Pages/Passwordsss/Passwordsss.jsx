@@ -1,5 +1,5 @@
 import React from 'react'
-import { Passwords } from '../../Components/auth/Passwords'
+import { Passwords } from '../../Components/auth/Jsx/Passwords'
 import "./Passwordsss.scss"
 import Logo from "../assets/Logo.png";
 import { NavLink } from "react-router-dom";
@@ -15,8 +15,8 @@ export default function Passwordsss() {
           </div>
         </div>
         <div className="title">
-          <h1>Регистраци</h1>
-          <h2>Введите электронную почту</h2>
+          <h1>Регистрация</h1>
+          <h2>Придумайте пароль</h2>
         </div>
       </header>
       <main>

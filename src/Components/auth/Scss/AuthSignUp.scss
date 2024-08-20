@@ -1,0 +1,161 @@
+@font-face {
+    font-weight: 600;
+    font-family: InterM;
+    src: url("../../fonts/Inter/Inter-Medium.ttf");
+}
+@font-face {
+    font-weight: 400;
+    font-family: InterT;
+    src: url("../../fonts/Inter/Inter-Thin.ttf");
+}
+@font-face {
+    font-size: 400;
+    font-family: InterL;
+    src: url("../../fonts/Inter/Inter-Light.ttf");
+}
+@font-face {
+    font-weight: 500;
+    font-family: InterR;
+    src: url("../../fonts/Inter/Inter-Regular.ttf");
+}
+
+.AuthSignUp{
+    form{
+        .loginBut{
+            
+        }
+        
+        .error{
+            font-family: InterR;
+            margin-left: 20px;
+            color: red;
+            position: absolute;
+            margin-top: -10px;
+        }
+            #in1{
+            padding-left: 50px;
+            margin-left: 16px;
+            margin-top: 40px;
+
+            cursor: pointer;
+
+            color: rgba(154, 154, 154, 1);
+            font-size: 14px;
+
+            height: 60px;
+            width: 270px;
+            
+            border: 2px solid rgba(209, 209, 209, 1);
+            border-radius: 10px;
+
+            background-image: url(../../assets/file2.png);
+            background-repeat: no-repeat;
+            background-position: left 11px center;
+            background-size: 30px;
+        }
+        #in1:focus{
+            color: black;
+        }
+        #in2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 327px;
+            height: 60px;
+            background-color: rgba(16, 143, 44, 1);
+            border: none;
+            margin-top: 60px;
+            border-radius: 10px;
+            font-family: InterM;
+            line-height: 28px;
+            font-size: 18px;
+            margin-left: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+    .AppsAuth{
+        .choice{
+            height: 18px;
+            width: 327px;
+            margin-top:20px;
+            margin-left: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .line{
+                height: 2px;
+                width: 75px;
+                background-color: rgb(218, 218, 218);
+            }
+            h3{
+                width: 157px;
+                height: 17px;
+                font-family: InterT;
+                font-size: 14px;
+                line-height: 16.94px;
+                color: rgba(128, 128, 128, 1);
+            }
+        }
+        .divAuthApps{
+            margin-top: 15px;
+            width: 310px;
+            margin-left: 16px;
+            display: flex;
+            justify-content: center;
+            .ToFlex{
+                display: flex;
+                justify-content: space-around;
+                width: 140px;
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+        .Prav{
+            display: flex;
+            align-items: center;
+            margin-left: 16px;
+            margin-top: 20px;
+            button{
+                margin-top: 10px;
+                height: 18px;
+                width: 18px;
+                border-radius: 0px;
+                cursor: pointer;
+            }
+            .empty{
+                border: rgba(154, 154, 154, 1) solid 2px;
+            }
+            .full{
+                background-image: url(../../assets/Znak.png);
+                border: none;
+            }
+            .FlexDiv{
+                margin-left: 10px;
+                align-items: center;
+                p{
+                    font-family: InterL;
+                    font-size: 11px;
+                    line-height: 12.1px;
+                    width: 300px;
+                    height: 1px;
+                }
+                .Link{
+                    font-family: InterR;
+                    font-size: 13px;
+                    line-height: 12.1px;
+                    width: 300px;
+                    height: 7px;
+                    margin-top: 0px;
+                    color: rgba(16, 143, 44, 1);
+                    text-decoration: none;
+                }
+                .Link:focus, .Link:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
